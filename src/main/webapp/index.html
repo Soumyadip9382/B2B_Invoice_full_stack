@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <h1>Update Invoice</h1>
+    <form action="EditServlet" method="POST">
+        <label for="slNo">Invoice ID:</label>
+        <input type="text" id="slNo" name="Sl_no">
+        <br>
+        <label for="customerOrderId">Customer Order ID:</label>
+        <input type="text" id="customerOrderId" name="CUSTOMER_ORDER_ID">
+        <br>
+        <label for="salesOrg">Sales Org:</label>
+        <input type="text" id="salesOrg" name="SALES_ORG">
+        <br>
+        <label for="distributionChannel">Distribution Channel:</label>
+        <input type="text" id="distributionChannel" name="DISTRIBUTION_CHANNEL">
+        <br>
+        <label for="companyCode">Company Code:</label>
+        <input type="text" id="companyCode" name="COMPANY_CODE">
+        <br>
+        <label for="orderCreationDate">Order Creation Date:</label>
+        <input type="date" id="orderCreationDate" name="ORDER_CREATION_DATE">
+        <br>
+        <label for="orderCurrency">Order Currency:</label>
+        <input type="text" id="orderCurrency" name="ORDER_CURRENCY">
+        <br>
+        <label for="orderAmount">Order Amount:</label>
+        <input type="text" id="orderAmount" name="ORDER_AMOUNT">
+        <br>
+        <label for="customerNumber">Customer Number:</label>
+        <input type="text" id="customerNumber" name="CUSTOMER_NUMBER">
+        <br>
+        <label for="amountInUSD">Amount in USD:</label>
+        <input type="text" id="amountInUSD" name="AMOUNT_IN_USD">
+        <br>
+        <input type="submit" value="Update">
+    </form>
+<h1>Delete Invoice</h1>
+    <form action="DeleteServlet" method="GET">
+        <label for="slNo">Invoice ID:</label>
+        <input type="text" id="slNo" name="Sl_no">
+        <br>
+        <input type="submit" value="Delete">
+    </form>
+    
+    
+<form method ='post' action='http://localhost:8080/h2h_final_project/AddServlet'>
+<label for='Sl_no'>Enter Serial number</label>
+<input type='text' name='Sl_no' id='Sl_no' />
+<br>
+<label for='CUSTOMER_ORDER_ID'>Enter Customer order Id</label>
+<input type='text' name='CUSTOMER_ORDER_ID' id='CUSTOMER_ORDER_ID' />
+<br>
+<label for='SALES_ORG'>Enter salesOrg</label>
+<input type='text' name='SALES_ORG' id='SALES_ORG' />
+<br>
+<label for='DISTRIBUTION_CHANNEL'>Enter Distribution Channel</label>
+<input type='text' name='DISTRIBUTION_CHANNEL' id='DISTRIBUTION_CHANNEL' />
+<br>
+<label for='COMPANY_CODE'>Enter Company code</label>
+<input type='text' name='COMPANY_CODE' id='COMPANY_CODE' />
+<br>
+<label for='ORDER_CREATION_DATE'>Enter Order creation date</label>
+<input type='Date' name='ORDER_CREATION_DATE' id='ORDER_CREATION_DATE' />
+<br>
+<label for='ORDER_CURRENCY'>Enter Order currency</label>
+<input type='text' name='ORDER_CURRENCY' id='ORDER_CURRENCY' />
+<br>
+<label for='ORDER_AMOUNT'>Enter Order Amount</label>
+<input type='text' name='ORDER_AMOUNT' id='ORDER_AMOUNT' />
+<br>
+<label for='CUSTOMER_NUMBER'>Enter Customer number</label>
+<input type='text' name='CUSTOMER_NUMBER' id='CUSTOMER_NUMBER' />
+<br>
+<label for='AMOUNT_IN_USD'>Enter Amount in USD</label>
+<input type='text' name='AMOUNT_IN_USD' id='AMOUNT_IN_USD' />
+<br>
+<input type='submit' value = 'Add User' />
+</form>
+</body>
+</html>
